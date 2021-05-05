@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create An Account</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/loginAndRegisterStyle.css" rel="stylesheet" id="loginAndRegisterStyle-css">
+    <link href="images/dollar-sign-test-image.png" rel="icon" id="browser-icon">
+  </head>
+  <body>
+    
+    
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Expense Reimbursement System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" id="navHomeLink" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="navViewRequestsLink" href="reimbursementTable.html">View Requests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="navNewRequestLink" href="NewReimbursement.html">Submit New Request</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="navLoginLink" href="login.html">Log In</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    
+    
+    
+    <div id="register">
+        <div class="container">
+            <div id="register-row" class="row justify-content-center align-items-center">
+                <div id="register-column" class="col-md-6">
+                    <div id="register-box" class="col-md-12">
+                        <form id="register-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Create An Account</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="username" id="usernameInput" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName" class="text-info">First Name:</label><br>
+                                <input type="text" name="firstName" id="firstNameInput" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="text-info">Last Name:</label><br>
+                                <input type="text" name="lastName" id="lastNameInput" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="text-info">E-mail:</label><br>
+                                <input type="text" name="email" id="emailInput" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="text" name="password" id="passwordInput" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword" class="text-info">Confirm Password:</label><br>
+                                <input type="text" name="confirmPassword" id="confirmPasswordInput" class="form-control">
+                            </div>
+                            <div id="login-link" class="text-right">
+                                <a href="login.html" class="text-info">Have an account? Login Here</a>
+                            </div>
+                            <div class="form-group">
+                                <button id="submitButton" type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                            <div id="checkError">
+
+                            </div>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/navbarControl.js"></script>
+    <script src="js/registrationPage.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

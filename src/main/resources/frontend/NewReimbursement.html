@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create a Reimbursement Request</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/loginAndRegisterStyle.css" rel="stylesheet" id="loginAndRegisterStyle-css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="images/dollar-sign-test-image.png" rel="icon" id="browser-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Expense Reimbursement System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" id="navHomeLink" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="navViewRequestsLink" href="reimbursementTable.html">View Requests</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link disabled" id="navNewRequestLink" href="NewReimbursement.html">Submit New Request</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="navLoginLink" href="login.html">Log In</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    
+    
+    <div id="newReimbursement">
+        <div class="container">
+            <div id="newReimbursement-row" class="row justify-content-center align-items-center">
+                <div id="newReimbursement-column" class="col-md-6">
+                    <div id="newReimbursement-box" class="col-md-12">
+                        <form id="newReimbursement-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Submit a new Reimbursement Request</h3>
+                            <div class="form-group">
+                                <label for="amount" class="text-info">Amount</label><br>
+                                <input type="text" name="amount" id="amountInput" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Select Type:</label><br>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Select Type
+                                </button>
+                                <div class="dropdown-menu" id="dropdownMenu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" id="typeLodging">Lodging</a>
+                                    <a class="dropdown-item" href="#" id="typeTravel">Travel</a>
+                                    <a class="dropdown-item" href="#" id="typeFood">Food</a>
+                                    <a class="dropdown-item" href="#" id="typeOther">Other</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="text-info">Description:</label><br>
+                                <input type="text" name="descripton" id="descriptionInput" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="text-info">Upload Reciept:</label><br>
+                                <input type="file" class="form-control" id="customFile"/>
+                            </div>
+                            <div class="form-group">
+                                <button id="submitButton" type="button" class="btn btn-primary">Submit</button>
+                            </div>
+
+                            <div id="checkError">
+
+                            </div>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/newRequest.js"></script>
+    <script src="js/navbarControl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</body>
+</html>
